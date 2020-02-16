@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<!-- http://www.formationstone.com/ -->
+<!-- https://www.amcharts.com/svg-maps/?map=france -->
+<html>
+<head>
+  <title>Le Verdier</title>
+  <link rel="stylesheet_normalize" type="text/css" href="/assets/css/normalize.css" media="all"/>
+  <link rel="stylesheet" type="text/css" href="/assets/css/style.css" media="all"/>
+  <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.js"></script>
+</head>
+<body>
+<!-- Start Menu -->
+<div class="menu">
+</div>
+<!-- End Menu -->
+<!-- Header Image -->
+<div class="header-images images">
+  <div class="overlay"></div>
+  <div class="image"></div>
+  <div class="logoContainer" id="logoContainer">
+    <div class="logo"></div>
+    <div class="title">
+      <h1>Le Verdier</h1>
+    </div>
+    <div class="striker-ones">
+      <h3>44°57'04.1"N 1°03'36.5"E</h3>
+    </div>
+  </div>
+</div>
+<!-- End Header Image -->
+<!-- Start Content -->
+<div class="house" id="news"></div>
+<div class="house" id="location-map">
+  <div class="words">
+    <div class="main-words">
+      <h2>Locatie</h2>
+    </div>
+    <div class="striker-ones">
+      <h3>Het huisje is gesitueerd tussen Les Eyzies-de-Tayac-Sireuil en Sarlat-la-Canéda, op ongeveer dezelfde hoogte als Bordeaux<br/>Maar pas op er zijn nog een aantal plaatsen in Frankrijk die Le Verdier heten!!!</h3>
+    </div>
+  </div>
+  <div class="location-map location-map-lg location-map-grey" style="margin-top: 160px;margin-bottom: 70px;">
+    <div class="location-container">
+      <div class="location location-paris paris">
+        <span class="location-name">
+          <span>Paris<br><b>France</b></span>
+        </span>
+        <span class="location-pin"></span>
+      </div>
+      <div class="location location-bordeaux bordeaux">
+        <span class="location-name">
+          <span>Bordeaux<br><b>France</b></span>
+        </span>
+        <span class="location-pin"></span>
+      </div>
+      <div class="location location-leverdier leverdier">
+        <span class="location-name">
+          <span>Le Verdier<br><b>France</b></span>
+        </span>
+        <span class="location-pin"></span>
+      </div>
+      <div class="map map-grey"></div>
+    </div>
+  </div>
+</div>
+<!-- End Content -->
+<!-- Start Footer -->
+<!-- End Footer -->
+<script>
+  var LV = {
+    init: function() {
+      var self=this;
+      self.set_logo_center();
+      self.set_resize_event();
+    },
+    set_resize_event: function(){
+      var self=this;
+      jQuery(window).resize(function(){
+        self.set_logo_center();
+      });
+    },
+    set_logo_center: function(){
+      var window_width=jQuery("#logoContainer").width();
+      jQuery(".logo").css({"margin-left":(window_width - jQuery(".logo").width())/2});
+      jQuery(".logo").show();
+    }
+  };
+
+  window.addEventListener('load', function(){
+    $(document).ready(function(){
+      LV.init();
+    });
+  });
+</script>
+</body>
+</html>
