@@ -1,0 +1,144 @@
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+body {
+    line-height:1;
+    -webkit-transition:-webkit-transform .4s ease;
+    -moz-transition:-moz-transform .4s ease;
+    -o-transition:-o-transform .4s ease;
+    transition:transform .4s ease;
+    -webkit-font-smoothing:antialiased;
+    text-rendering:optimizeLegibility;
+    font-family:'Roboto',sans-serif;
+    position:relative
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+}
+
+div {
+    display: block;
+}
+
+.logo{
+    display:none;
+    width:76px;
+    height:76px;
+    top:-60px;
+    position:absolute;
+    border-radius:50px;
+    background:url('/assets/images/groenling_75x75.png') no-repeat top left;
+}
+
+.images {
+    text-align: center;
+    position: relative;
+    top: 0;
+    width: 100%;
+    float: left;
+    height: 100%;
+}
+
+.images .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: .1;
+    filter: alpha(opacity='10');
+    background: #a9e3ba;
+    bottom: 180px;
+    z-index: 2;
+}
+
+.images .image {
+    -webkit-background-size: 100% 75%;
+    -moz-background-size: 100% 75%;
+    -o-background-size: 100% 75%;
+    background-size: 100% 75%;
+    -webkit-background-size: 100% 75%;
+    -moz-background-size: 100% 75%;
+    -o-background-size: 100% 75%;
+    background-size: 100% 75%;
+    background-attachment: fixed;
+    background-position: top right;
+    background-repeat: no-repeat;
+    box-sizing: content-box;
+    -webkit-bpx-sizing: content-box;
+    overflow: hidden;
+    height: 100%;
+    position: relative;
+}
+
+.header-images .image {
+    bottom: 180px;
+    background-image: url('/assets/images/background.jpg');
+}
+
+.images .logoContainer .striker-ones {
+    color: #a8a9ab;
+    font-size: 15px;
+    font-weight: normal;
+    line-height: 18px;
+    margin-top: -9px;
+}
+
+.house {
+    width: 100%;
+    float: left;
+    padding: 20px 0 10px 0;
+}
+
+.main-words {
+    font-size: 36px;
+    line-height: 72px;
+    text-align: center;
+    margin-top: 27px;
+    font-weight: 300;
+}
+
+.striker-ones {
+    font-size: 36px;
+    line-height: 36px;
+    text-align: center;
+    font-weight: bold;
+    margin-top: -12px;
+}
+
+.house .words .striker-ones {
+    color: #a8a9ab;
+    font-size: 15px;
+    font-weight: normal;
+    line-height: 18px;
+    margin-top: -9px;
+}
+
+.logoContainer {
+    top: -180px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    float: left;
+    z-index: 3;
+}
+
+.logoContainer .title {
+    font-size: 36px;
+    line-height: 50px;
+    text-align: center;
+    margin-top: 27px;
+    font-weight: 300;
+}
